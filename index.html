@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dommanipulation</title>
+   
+</head>
+<body>
+
+    <div class="contain">
+        <img id = "logo" src="./images/logo2.jpg" alt="Logo" onmouseover="changelogo();" onmouseout="reset();">
+    </div>
+
+
+    <script>
+        let x = document.getElementById("logo")
+        function changelogo(){
+            x.setAttribute('src',"./images/logo1.jpg")
+            x.style.height="100px"
+
+        }
+
+        function reset(){
+            x.setAttribute('src',"./images/logo2.jpg")
+            x.style.height="100px"
+        }
+    </script>
+</body>
+</html>
